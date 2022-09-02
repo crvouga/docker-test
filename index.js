@@ -6,6 +6,7 @@ httpApp.get("/", (_req, res) => {
   res.json({
     message: "Hello from docker test server",
     newData: "this is new data",
+    moreNewDate: "Hello",
   });
 });
 
