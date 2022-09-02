@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "docker-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crvouga/docker-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crvouga/docker-test/issues"
+  },
+  "homepage": "https://github.com/crvouga/docker-test#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
