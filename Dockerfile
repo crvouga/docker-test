@@ -1,9 +1,17 @@
-FROM node:latest
+FROM node:16
 
-WORKDIR /usr/app
+# Install DEB dependencies and others.
+RUN \
+    set -x \
+    && apt-get update \
+    && apt-get install -y net-tools build-essential python3 python3-pip valgrind
 
-COPY . .
+ADD package.json .
+
+ADD package-lock.json .
 
 RUN npm install
+
+COPY . .
 
 CMD [ "node", "index.js" ]
