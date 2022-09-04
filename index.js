@@ -44,10 +44,7 @@ const main = async () => {
   httpApp.get("/", (_req, res) => {
     res.json({
       worker,
-      message: "Hello from docker test server",
-      newData: "this is new data",
-      moreNewData: "Hello",
-      mediasoup: "is installed.",
+      message: "mediasoup is installed.",
     });
   });
 };
